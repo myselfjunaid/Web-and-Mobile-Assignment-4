@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+           <!-- Favicons -->
+      <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+
+        <title>Store Registration Qareebi Shop</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+
+
+    </head>
+    
+    	<style>
+.alert {
+  
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  width:50%;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+</style>
+	
+    <body>    <center>
+    <div id="msg" hidden>
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Succssfully Registered </strong> You will receive confirmation email and call from our team in between 2 to 3 working days about your approval request.
+</div>
+		</div></center>
+        <form action="" id="myform" class="register" method="post" enctype="multipart/form-data">
+          <a href="index.php">  <img src="img/logo.png" width="140" height="80" style="float:right"></a>
+            <h1>Store Registration</h1>
+            <fieldset class="row1">
+                <legend>Store Details
+                </legend>
+                <p>
+                    <label>Store Name
+                    </label>
+                    <input type="text" name="store_name" required/>
+                    <div class="res"><label>Store Owner
+                    </label>
+                    <input type="text" name="store_owner" required/>
+					</div>
+                </p>
+				
+				<br>
+                <p>
+                    <label>Store Logo
+                    </label>
+                    <input type="file" name="store_logo" required/>
+                    
+					<div class="res">
+					<label>Main Banner
+                    </label>
+                    <input type="file" name="main_banner" required/>
+                    <label class="obinfo">
+                    </label>
+					</div>
+                </p>
+            </fieldset>
+            <fieldset class="row2">
+                <legend>Personal Details
+                </legend>
+                <p>
+                    <label>City
+                    </label>
+                    <input type="text" name="city" required/>
+                </p>
+				<br>
+				<br>
+                <p>
+                    <label>Store Address
+                    </label>
+                    <input type="text" class="long" name="address" required/>
+                </p>
+				<br>
+				<br>
+                <p>
+                    <label>CNIC No#
+                    </label>
+					<input id="CNIC_No" type="text"  data-inputmask="'mask': '99999-9999999-9'"  placeholder="XXXXX-XXXXXXX-X"  name="nic"  required>
+                </p>
+				<br>
+				<br>
+                <p>
+                    <label>CNIC Image
+                    </label>
+                    <input type="file" name="nic_image" required/>
+                </p>
+				<br>
+				<br>
+				<p>
+                    <label>Delivery Range
+                    </label>
+                    <input type="number" name="delivery_range" required/>
+                </p>
+                
+            </fieldset>
+           <div class="res2"> <fieldset class="row3">
+                <legend>Further Information
+                </legend>
+                
+				<p>
+				
+                    <label>Email</label>
+                    </label>
+                    <input type="email" name="email" required>
+					
+                </p>
+                <p>
+                    <label>Mobile No# 
+                    </label>
+                     <input  name="phone_no"  data-inputmask="'mask': '0399-99999999'" required=""  type = "text" maxlength = "12" required>
+
+                </p>
+                <p>
+                    <label>Password 
+                    </label>
+                    <input type="password" name="password" required>
+                </p>
+                <p>
+                    <label>Confirm Password
+                    </label>
+                    <input type="password" name="cpass" required>
+                </p>
+                <div class="infobox"><h4>Helpful Information</h4>
+                    <p>You will receive confirmation email and call from our team in between 2 to 3 working days about your approval request.</p>
+                </div>
+            </fieldset>
+			</div>
+            <fieldset class="row4">
+                <legend>Terms and Conditions
+                </legend>
+                <p class="agreement">
+                    <input  name="terms" type="checkbox" value="" required/>
+                    <label>*  I accept the <a href="terms.html">Terms and Conditions</a></label>
+                </p>
+            </fieldset>
+            <div class="res3"><button class="button" type="submit" name="register">Register &raquo;</button></div>
+		
+        </form>
+        <br><br>
+	<center><h3>Note: You must have a delivery boy before you register</h3></center>
+
+    </body>
+	<script>
+    $(":input").inputmask();
+
+   </script>
+
+</html>
+
+
+
+
+
